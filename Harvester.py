@@ -43,7 +43,7 @@ def bruteforce_db():
         value = bruteforce_queue.get()
         try:
             url = f'https://www.bwe.bwe/{value}'
-            headers = {'User-Agent': 'Mozilla/5.0 (PlayStation; PlayStation 5/2.26) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15'}
+            headers = {'User-Agent': 'Mozilla/5.0 (PlayStation; PlayStation 5/2.26) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15'} #https://deviceatlas.com/blog/list-of-user-agent-strings
             response = requests.get(url, headers=headers, timeout=5)
             if response.status_code == 404:
                 
